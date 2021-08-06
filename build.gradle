@@ -1,0 +1,32 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+    google()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
+}
+
+test {
+    useJUnitPlatform()
+    testLogging {
+        exceptionFormat = 'short'
+        showStandardStreams = true
+        events = ["passed", "failed", "skipped" ]
+    }
+}
+task print_message{
+    group "Custom task"
+    description "Custom task to build, test and print a message at the end"
+    doLast{
+        println "Hello, This is Arihant and I am learning to write custom tasks in Gradle.";
+    }
+}

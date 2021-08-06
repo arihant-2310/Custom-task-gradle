@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="HelloWorldTests" tests="2" skipped="0" failures="0" errors="0" timestamp="2021-08-06T05:44:18" hostname="Arihants-MacBook-Pro.local" time="0.02">
+  <properties/>
+  <testcase name="test_method_fullname()" classname="HelloWorldTests" time="0.017"/>
+  <testcase name="mainTest()" classname="HelloWorldTests" time="0.002"/>
+  <system-out><![CDATA[Welcome to the world of Java developers, Arihant
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
